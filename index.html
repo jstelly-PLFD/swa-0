@@ -7,7 +7,7 @@
         <script>
             function serveResponse(statusCode) {
                 console.log("Server responded with " + statusCode.toString() + "!")
-                document.getElementById("banner").innerHTML = statusCode.toString()
+                document.getElementById("bodyText").innerHTML = statusCode.toString()
             }
 
             function callOktaFlow(utoken, otoken, ftoken) {
@@ -55,5 +55,11 @@
             console.log(getQueryVariable('fToken'));
         </script>
         <span style="color: purple" id="banner">Hello World!</span>
+        <div class="w3-panel w3-info">
+        <h2>W3.CSS Website Templates</h2>
+        <p>We have created some responsive W3.CSS website templates for you to use. </p>
+        <p> Server response:</p>
+        <p id="bodyText">ERROR - NO RESPONSE</p>
+        </div>
     </body>
 </html>
