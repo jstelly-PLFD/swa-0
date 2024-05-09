@@ -29,7 +29,7 @@
                     console.log(response.status) || response
                     serverResponse = response.status
                 })
-                .then(response => response.text())
+                .then(response => console.log(response))
                 .then(body => {
                     console.log(body)
                     serveResponse(serverResponse)
